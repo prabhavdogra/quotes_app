@@ -59,11 +59,6 @@ class _MyAppState extends State<MyApp> {
             ),
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
-          onPressed: () {},
-          backgroundColor: Colors.orange[600],
-        ),
       ),
     );
   }
