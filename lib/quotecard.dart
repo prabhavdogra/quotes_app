@@ -2,12 +2,13 @@
 // ignore_for_file: use_key_in_widget_constructors
 // ignore_for_file: prefer_const_constructors_in_immutables
 // ignore_for_file: avoid_unnecessary_containers
+// ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'quote.dart';
 
 class QuoteCard extends StatelessWidget {
   final Quote quote;
-  final Function delete;
+  final void Function() delete;
   QuoteCard({required this.quote, required this.delete});
 
   @override
@@ -43,17 +44,10 @@ class QuoteCard extends StatelessWidget {
                 ),
               ),
             ),
-            ElevatedButton(
-              onPressed: delete(),
-              child: Container(
-                  // child: Row(
-                  //   children: <Widget>[
-                  //     Icon(
-                  //       child: Icons.delete
-                  //       ),
-                  //   ],
-                  // ),
-                  ),
+            FlatButton.icon(
+              onPressed: delete,
+              label: Text('Delete'),
+              icon: Icon(Icons.delete),
             ),
           ],
         ),
