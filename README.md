@@ -1,6 +1,6 @@
 # quotes_app
-
-A new Flutter project.
+A quotes application
+![image](https://user-images.githubusercontent.com/55079966/167283678-876e912b-00cb-4316-9f8d-990001f61722.png)
 
 ## Getting Started
 
